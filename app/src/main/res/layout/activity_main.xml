@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/numberInput"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <Button
+        android:id="@+id/number1"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/numberInput"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/number2"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/numberInput"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/number1"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/number3"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/numberInput"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/number2"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/number4"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/numberInput"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/number3"
+        android:text="4" />
+    <Button
+        android:id="@+id/number5"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/number1"
+        android:layout_marginTop="10dp"
+        android:text="5" />
+</RelativeLayout>
