@@ -8,52 +8,179 @@
 
 
     <EditText
-        android:id="@+id/numberInput"
+        android:id="@+id/result"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:layout_marginTop="10dp"
         android:ems="10"
         android:inputType="numberSigned" />
 
-    <Button
-        android:id="@+id/number1"
-        android:layout_width="100dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/numberInput"
-        android:text="1" />
+    <EditText
+        android:id="@+id/newNumber"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/result"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-4dp"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <TextView
+        android:id="@+id/displayOperation"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/newNumber"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="-53dp"
+        android:layout_marginEnd="6dp"
+        android:layout_toStartOf="@id/newNumber"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
 
     <Button
-        android:id="@+id/number2"
-        android:layout_width="100dp"
+        android:id="@+id/number7"
+        android:layout_width="70dp"
         android:layout_height="60dp"
-        android:layout_below="@id/numberInput"
-        android:layout_marginTop="10dp"
-        android:layout_toEndOf="@+id/number1"
-        android:text="2" />
+        android:layout_below="@id/newNumber"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="80dp"
+        android:text="7" />
 
     <Button
-        android:id="@+id/number3"
-        android:layout_width="100dp"
+        android:id="@+id/number8"
+        android:layout_width="70dp"
         android:layout_height="60dp"
-        android:layout_below="@id/numberInput"
-        android:layout_marginTop="10dp"
-        android:layout_toEndOf="@+id/number2"
-        android:text="3" />
+        android:layout_below="@id/newNumber"
+        android:layout_marginTop="80dp"
+        android:layout_toEndOf="@id/number7"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/number9"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/newNumber"
+        android:layout_marginTop="80dp"
+        android:layout_toEndOf="@+id/number8"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/divide"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/newNumber"
+        android:layout_marginTop="80dp"
+        android:layout_toEndOf="@+id/number9"
+        android:text="/" />
 
     <Button
         android:id="@+id/number4"
-        android:layout_width="100dp"
+        android:layout_width="70dp"
         android:layout_height="60dp"
-        android:layout_below="@id/numberInput"
+        android:layout_below="@id/number7"
+        android:layout_marginStart="70dp"
         android:layout_marginTop="10dp"
-        android:layout_toEndOf="@+id/number3"
         android:text="4" />
+
     <Button
         android:id="@+id/number5"
-        android:layout_width="100dp"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/number8"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/number4"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/number6"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/number9"
+        android:layout_toEndOf="@id/number5"
+        android:layout_marginTop="10dp"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/multiply"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/number9"
+        android:layout_toEndOf="@id/number6"
+        android:layout_marginTop="10dp"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/number3"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/number4"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/number2"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/number4"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/number3"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/number2"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/number5"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/number1"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/number1"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/number4"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+
+        android:text="1" />
+
+    <Button
+        android:id="@+id/number0"
+        android:layout_width="70dp"
         android:layout_height="60dp"
         android:layout_below="@id/number1"
+        android:layout_marginStart="70dp"
         android:layout_marginTop="10dp"
-        android:text="5" />
+        android:text="0" />
+
+    <Button
+        android:id="@+id/point"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/number2"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/number0"
+        android:text="."/>
+    <Button
+        android:id="@+id/equals"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/number3"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/point"
+        android:text="=" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/number3"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/equals"
+        android:text="+" />
+
 </RelativeLayout>
