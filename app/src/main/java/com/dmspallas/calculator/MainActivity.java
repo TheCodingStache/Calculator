@@ -48,5 +48,38 @@ public class MainActivity extends AppCompatActivity {
                 newNumber.append(button.getText().toString());
             }
         };
+        number0.setOnClickListener(listener);
+        number1.setOnClickListener(listener);
+        number2.setOnClickListener(listener);
+        number3.setOnClickListener(listener);
+        number4.setOnClickListener(listener);
+        number5.setOnClickListener(listener);
+        number6.setOnClickListener(listener);
+        number7.setOnClickListener(listener);
+        number8.setOnClickListener(listener);
+        number9.setOnClickListener(listener);
+        point.setOnClickListener(listener);
+
+
+        View.OnClickListener operationListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Button button = (Button) view;
+                String operation = button.getText().toString();
+                String value = newNumber.getText().toString();
+                if (value.length() != 0) {
+                    performOperation(value, operation);
+                }
+                pendingOperation = operation;
+                displayOperation.setText(pendingOperation);
+            }
+        };
+        equals.setOnClickListener(operationListener);
+        plus.setOnClickListener(operationListener);
+        minus.setOnClickListener(operationListener);
+        divide.setOnClickListener(operationListener);
+        multiply.setOnClickListener(operationListener);
     }
+
+
 }
