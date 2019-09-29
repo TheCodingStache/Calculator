@@ -111,5 +111,8 @@ public class MainActivity extends AppCompatActivity {
                     break;
             }
         }
+        result.setText(operand1.toString());
+        newNumber.setText("");
+
     }
 }
